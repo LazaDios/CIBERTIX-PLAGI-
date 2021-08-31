@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina para Loguear Usuarios">
+    <meta name="author" content="LAZARO MARIN / EDGIDIO LEON">
+    <title>CIBERTIX</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-light tema" id="menuu">
+        <!--TEMA ES UNA CLASE PERSONAL-->
+        <div class="container-fluid">
+            <a class="navbar-brand mx-2" href="index.html">
+                <img src="img/cybertyx-texto.png" title="CIBERTIX" id="logo" alt="CIBERTIX" width="150">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+            <div class="collapse navbar-collapse mr-5" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-1 ml-auto">
+                    <li class="nav-item  "><a class="nav-link" href="#arriba">INFORMACION</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#medio">PLANES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">INGRESAR</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--FIN NAVBAR-->
+
+    <!--INICIO DE LA VENTANA INFORMACION (PRIMERA PANTALLA)-->
+    <a name="arriba"></a>
+    <div class="container-fluid mx-1 mt-1" id="incio-Pantalla">
+
+        <div class="row mt-5 pt-5 ">
+            <div class="col-12 col-lg-6  border p-1 align-items-center " id="contendor-informacion">
+                <div class="p-2 align-items-center text-center">
+                    <h1>BIENVENIDO A CIBERTIX!!</h1>
+                    <hr>
+                </div>
+
+                <div class="mt-1 p-4" id="informacion">
+                    <p>Ésta red se mantiene gracias a algunos usuarios que conscientemente hacen un aporte mensual
+                        para contribuir al mantenimiento, funcionamiento y mejoras de ésta red, éstos aportes han ido
+                        mermado con el paso del tiempo, es por eso que el equipo de administradores de esta red ve con
+                        necesidad la aplicacion de un cobro mensual a usuarios con alto requerimiento de datos.</p>
+                    <hr>
+                    <p>Se implementarán los siguientes planes <a href="#medio" class="btn border btn-dark">PLANES</a>
+                        manteniendo el inicio de
+                        sesion gratuito con las restricciones de 200MB Cada 6 horas <i>"Mas info Abajo"</i>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col align-items-center text-center">
+                <img src="img/otra.png" class="w-100 img p-1" title="SALUD!" alt="PERSONAS TOMANDO TÉ">
+            </div>
+        </div>
+
+    </div>
+    <!--FIN DE LA INFORMACION-->
+
+    <!--COMIENZO DE LAS TARGETAS QUE TENDRAN LOS PLANES-->
+
+
+
+    <div id="planes">
+        <div class="container-md p5">
+            <a name="medio"></a>
+            <!--PARA POSICIONAR LA PAGINA-->
+            <div class="row pt-1">
+                <h3 class="text-center pb-5 pt-5 h1">PLANES DISPONIBLE</h3>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm ">
+                    <div class="card w-100 card-boder bg-dark mb-2">
+                        <img src="img/basico.png" class="card-img-top" title="BAJO CONSUMO" alt="BASICO">
+                        <div class="card-body">
+                            <h5 class="card-title">PLAN BASICO</h5>
+                            <p class="card-text">PRECIO: 5$ - 30GB </p>
+                            <hr>
+                            <p class="card-text"><a class="btn btn-dark" data-toggle="modal"
+                                    data-target="#ModalBajo">Mas Info..</a></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card w-100 card-boder mb-2">
+                        <img src="img/medio.png" class="card-img-top" title="MEDIO CONSUMO" alt="MEDIO">
+                        <div class="card-body">
+                            <h5 class="card-title">PLAN MEDIO</h5>
+                            <p class="card-text">PRECIO: 10$ - 65GB </p>
+                            <hr>
+                            <p class="card-text"><a class="btn btn-dark" data-toggle="modal"
+                                    data-target="#ModalMedio">Mas Info..</a></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card w-100 card-boder mb-2">
+                        <img src="img/alto.png" class="card-img-top" title="ALTO CONSUMO" alt="ALTO">
+                        <div class="card-body">
+                            <h5 class="card-title">PLAN ALTO <img src="img/premiun.png" width="30"></h5>
+                            <p class="card-text">PRECIO: 15$ - 120GB </p>
+                            <hr>
+                            <p class="card-text"><a class="btn btn-dark" data-toggle="modal"
+                                    data-target="#ModalAlto">Mas Info..</a></p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row py-5">
+                <div class="col text-center">
+                    <a href="#arriba"><img src="img/cybertyx-texto.png" height="90"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--FIN DE LAS TARGETAS QUE TENDRAN LOS PLANES-->
+
+
+    <!-- MODAL PARA LAS TARGETAS-->
+    <div class="modal fade" id="ModalAlto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">PLAN ALTO CONSUMO <img src="img/premiun.png"
+                            width="40"></h5><button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <p>Calculado a Razón de 4GB Diarios Rinde para un grupo familiar que disfrutan de Noticias, Bancos,
+                        Whatsapp, y un uso extenso de redes sociales y entretenimiento digital.
+                        <i> "El cupo de usuarios con este plan está limitado, contacte para mas informacion."</i>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <p class=" text-center"> PRECIO: 15$ - PARA: 120GB</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="ModalMedio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">PLAN MEDIO CONSUMO </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <p>Calculado a Razón de 2GB Diarios Rinde para un grupo familiar que disfrutan de Noticias, Bancos,
+                        Whatsapp, y un uso moderado-normal de redes sociales y entretenimiento digital.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <p class=" text-center"> PRECIO: 10$ - PARA: 65GB</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="ModalBajo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">PLAN BAJO CONSUMO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <p>Éste plan de datos está calculado a medida de 1GB Diario, Rinde para un grupo familiar enfocado
+                        en lo necesario (Noticias, Bancos, Whatsapp, Poco de redes sociales y poco entretenimiento
+                        digital.)
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <p class=" text-center"> PRECIO: 5$ - PARA: 30GB</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--FIN DE LOS 3 MODAL-->
+
+    <script src='js/popper.min.js'"></script>
+   <script src=" js/bootstrap.min.js"></script>
+</body>
+
+</html>

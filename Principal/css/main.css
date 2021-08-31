@@ -1,0 +1,245 @@
+/*VARIABLES*/
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+:root {
+    --colorPrincipal: #f8600eaa;/*anaranjado bonito*/
+    --sombreDeGray: 1px 3px 10px rgb(63, 56, 53);
+  }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "satisfy" !important;
+    background:linear-gradient(to left  , rgb(7, 7, 7), rgb(230, 221, 221));
+}
+/*GENERALES (ME DA FLOJERA BUSCAR LOS ELEMENTOS XD)*/
+h1 , h2 , h3 , h4 , button {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-weight: bold;
+}
+p{
+    font-size: 25px;
+}
+li a{
+    font-weight: bold;
+}
+
+
+/*COLOR PARA LA BARRA DEL MENU*/
+.tema{
+    background: linear-gradient(to left  , var(--colorPrincipal) , #f02a2af1 );
+    box-shadow: var(--sombreDeGray);
+}
+#menuu{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    margin-top: -4%;
+}
+@media (max-width:750px) {
+    #menuu{
+        margin-top: -9.5%;
+        width: 100%;
+        
+    }
+}
+@media (max-width:450px) {
+    #menuu{
+        margin-top: -15.5%;
+        width: 100%;
+        
+    }
+}
+
+
+
+/*ESTILOS DE LA SECCION PRINCIPAL*/
+.margen{
+    height: 80px;
+}
+#contendor-informacion{
+    box-shadow: var(--sombreDeGray);
+    height: 70%;
+    min-height: 70%;
+}
+.img{
+  animation: Petare 2s infinite linear;
+  display: block;
+  height: 90%;
+  min-height: 90%;
+ 
+ 
+}
+
+@keyframes Petare {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+/*PARTE DE LOS PRECIOS (PLANES)*/
+.card-boder{
+    box-shadow: var(--sombreDeGray);
+    background-color: var(--colorPrincipal) !important;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+    z-index: 0;
+}
+.card-boder:hover{
+    transform: scale(1.05);
+}
+#planes{
+    background: rgb(255, 255, 255);
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0.302) 50% , rgba(255, 255, 255, 0) 57% );
+    background-repeat: repeat-x;
+    background-size: 75% ;
+    margin-top: -59px;
+}
+.card-img-top{
+    width: 75%;
+    height: 80%;
+    margin: 0px auto;
+}
+
+
+/*@media (max-width:811px) {
+    img{
+        display: none;
+    }
+    #contendor-informacion{
+        width: 100%;
+        
+    }
+}*/
+
+
+
+
+/*FIN DE MIS NUEVOS ESTILOS*/
+/*#ribbon{
+    background-color: rgb(219, 26, 26);
+    background-image: repeating-linear-gradient(45deg , transparent , transparent 25px , rgba(131 , 21 , 21 , 0.5) 25px , rgba(131 , 21 ,21 ,0.5) 40px);
+}
+
+#ribbon::after{
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0px auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+#birthday {
+    background-color: rgb(219, 26, 26);
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#birthday img{
+    position: relative;
+    margin-top: -30px;
+}
+.text-shadow{
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+#separador-ribbon{
+    width: 100%;
+    overflow: hidden; 
+    /*Para no desbordar*/
+    /*position: relative;
+    z-index: 2;
+ 
+}*/
+/*
+#separador-ribbon .content{
+    width: 150%;
+    height: 150px;
+    margin-left: -25px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.card-boder{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-boder:hover{
+    transform: scale(1.05);
+}*/
+/*#games{
+    background: rgb(255, 255, 255);
+    background: url(../img/bg-02.png) , linear-gradient(0deg , white 0% , rgba(99,196,255,1)57%);
+    background-repeat: repeat-x;
+    background-size: 75% ;
+    margin-top: -59px;
+}
+
+#separator-amiibos{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index:2 ;
+}
+#separator-amiibos .content{
+    background: url(../img/bg-03.png);
+    width: 110%;
+    height: 100px;
+    margin-left: -5%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+#amiibos{
+    background: url(../img/bg-01.png) , url(../img/bg-03.png);
+    background-repeat: no-repeat , repeat;
+    background-position: bottom center , center center;
+    background-size: 100% , auto;
+}
+.amiibo{
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+.amiibo:hover{
+    transform: scale(1.05);
+}
+.amiibo-name{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#separator-amiibos-footer{
+    height: 20vw;
+}
+#play{
+    background: url(../img/bg-04.png);
+    background-color: rgb(255, 255, 219);
+    background-size: 40px 40px;
+}
+#footer{
+    background: url(../img/bg-04.png);
+    background-color: rgb(224 , 144 , 24);
+    background-size: 50px 50px;
+}*/
